@@ -98,7 +98,7 @@ footer .fname { font-family: 'Zilla Slab'; font-weight: 700; text-transform: upp
 .subnav .home:hover { color: var(--ochre); }
 .subnav .links { display: flex; gap: 24px; }
 .subnav .links a { font-family: 'Zilla Slab'; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--bone); font-size: 15px; text-decoration: none; text-shadow: 0 1px 5px rgba(0,0,0,0.55); }
-.subhead.ochre-head .subnav .links a { color: var(--ink); }
+.subhead.ochre-head .subnav .links a { color: var(--ink); text-shadow: 0 1px 4px rgba(255,255,255,0.85); }
 .subnav .links a:hover, .subnav .links a.active { color: var(--ochre); }
 .subhead.ochre-head .subnav .links a:hover, .subhead.ochre-head .subnav .links a.active { color: var(--oxide); }
 .subhead h1 { font-size: 76px; color: var(--bone); margin-bottom: 20px; text-shadow: 4px 4px 0 var(--ochre); }
@@ -286,7 +286,7 @@ a.docframe .docbar .t2 { font-family: 'Zilla Slab'; font-weight: 700; text-trans
 
 /* full-bleed photo strip (bottom of a page) */
 .fullbleed-strip { width: 100%; border-top: 9px solid var(--ink); border-bottom: 9px solid var(--ink); overflow: hidden; max-height: 360px; }
-.fullbleed-strip img { width: 100%; display: block; object-fit: cover; }
+.fullbleed-strip img { width: 100%; display: block; height: 360px; object-fit: cover; object-position: center bottom; }
 
 /* side-margin photo (alternating layout) */
 .with-sidephoto { display: grid; grid-template-columns: 1fr 300px; gap: 44px; align-items: start; }
@@ -368,7 +368,7 @@ a.docframe .docbar .t2 { font-family: 'Zilla Slab'; font-weight: 700; text-trans
 .subhead-popout {
   position: absolute; top: 50%; right: 0; transform: translateY(-50%) rotate(-2deg);
   width: 240px; border-radius: 8px; overflow: hidden;
-  box-shadow: 0 18px 44px rgba(0,0,0,0.30); z-index: 1;
+  box-shadow: 0 18px 44px rgba(0,0,0,0.30); z-index: 1; opacity: 0.65;
 }
 .subhead-popout img { display: block; width: 100%; }
 .subhead-inner > .subnav, .subhead-inner > h1, .subhead-inner > .standfirst { position: relative; z-index: 2; }
