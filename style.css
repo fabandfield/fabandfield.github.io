@@ -447,4 +447,5 @@ a.docframe .docbar .t2 { font-family: 'Zilla Slab'; font-weight: 700; text-trans
 @media (max-width: 880px) {
   .popout-chip,
   .popout-poster { display: none; }
+  .areaband.teal .area-title { text-shadow: 2px 2px 0 var(--ochre); }
 }
