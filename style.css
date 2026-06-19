@@ -285,8 +285,8 @@ a.docframe .docbar .t2 { font-family: 'Zilla Slab'; font-weight: 700; text-trans
 .popout-cap { font-family: 'Zilla Slab'; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; font-size: 11px; margin-top: 12px; opacity: 0.85; }
 
 /* full-bleed photo strip (bottom of a page) */
-.fullbleed-strip { width: 100%; border-top: 9px solid var(--ink); border-bottom: 9px solid var(--ink); overflow: hidden; max-height: 360px; }
-.fullbleed-strip img { width: 100%; display: block; height: 360px; object-fit: cover; object-position: center bottom; }
+.fullbleed-strip { width: 100%; border-top: 9px solid var(--ink); border-bottom: 9px solid var(--ink); }
+.fullbleed-strip img { width: 100%; display: block; }
 
 /* side-margin photo (alternating layout) */
 .with-sidephoto { display: grid; grid-template-columns: 1fr 300px; gap: 44px; align-items: start; }
