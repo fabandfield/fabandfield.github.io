@@ -97,7 +97,7 @@ footer .fname { font-family: 'Zilla Slab'; font-weight: 700; text-transform: upp
 .subhead.ochre-head .subnav .home { color: var(--ink); text-shadow: 2px 2px 0 var(--oxide); }
 .subnav .home:hover { color: var(--ochre); }
 .subnav .links { display: flex; gap: 24px; }
-.subnav .links a { font-family: 'Zilla Slab'; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--bone); font-size: 15px; text-decoration: none; }
+.subnav .links a { font-family: 'Zilla Slab'; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--bone); font-size: 15px; text-decoration: none; text-shadow: 0 1px 5px rgba(0,0,0,0.55); }
 .subhead.ochre-head .subnav .links a { color: var(--ink); }
 .subnav .links a:hover, .subnav .links a.active { color: var(--ochre); }
 .subhead.ochre-head .subnav .links a:hover, .subhead.ochre-head .subnav .links a.active { color: var(--oxide); }
@@ -189,8 +189,8 @@ a.docframe .docbar .t2 { font-family: 'Zilla Slab'; font-weight: 700; text-trans
   .figwrap img { max-height: 50vh; }
   .area-grid { grid-template-columns: 1fr; gap: 12px; }
   .area-num { display: none; }
-  .area-title { font-size: 52px; }
-  .subhead h1 { font-size: 46px; }
+  .area-title { font-size: clamp(24px, 7vw, 52px); }
+  .subhead h1 { font-size: clamp(22px, 7vw, 46px); }
   .dept-head h2 { font-size: 32px; }
   .proj { grid-template-columns: 1fr; gap: 12px; }
   .subnav { flex-direction: column; align-items: flex-start; gap: 16px; }
@@ -447,12 +447,4 @@ a.docframe .docbar .t2 { font-family: 'Zilla Slab'; font-weight: 700; text-trans
 @media (max-width: 880px) {
   .popout-chip,
   .popout-poster { display: none; }
-}
-
-/* prevent long titles like "Communications" from clipping on small phones */
-@media (max-width: 520px) {
-  .area-title { font-size: 8vw; }
-  .subhead h1 { font-size: 8vw; }
-  .wrap { padding: 0 20px; }
-  .subhead-inner { padding-left: 20px; padding-right: 20px; }
 }
