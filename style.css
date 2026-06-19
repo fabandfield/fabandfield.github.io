@@ -442,3 +442,17 @@ a.docframe .docbar .t2 { font-family: 'Zilla Slab'; font-weight: 700; text-trans
 .embeds.writing-full .embed .etitle { font-size: 17px; }
 .embeds.writing-full .embed .cap { padding: 18px 20px; }
 @media (max-width: 860px) { .embeds.writing-full { grid-template-columns: 1fr; } }
+
+/* hide decorative band popouts that overlap content on narrow screens */
+@media (max-width: 880px) {
+  .popout-chip,
+  .popout-poster { display: none; }
+}
+
+/* prevent long titles like "Communications" from clipping on small phones */
+@media (max-width: 520px) {
+  .area-title { font-size: 8vw; }
+  .subhead h1 { font-size: 8vw; }
+  .wrap { padding: 0 20px; }
+  .subhead-inner { padding-left: 20px; padding-right: 20px; }
+}
