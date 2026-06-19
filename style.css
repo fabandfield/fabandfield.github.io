@@ -151,15 +151,15 @@ footer .fname { font-family: 'Zilla Slab'; font-weight: 700; text-transform: upp
 .photoplate img { display: block; width: 100%; }
 .photo-credit { font-family: 'Zilla Slab'; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; font-size: 11px; margin-top: 12px; opacity: 0.85; }
 .embeds { display: grid; grid-template-columns: repeat(auto-fill, minmax(235px, 1fr)); gap: 18px; margin-top: 10px; }
-.embed { display: flex; flex-direction: column; text-decoration: none; border: 4px solid var(--ink); background: var(--bone); transition: transform 0.14s, box-shadow 0.14s; }
-.embed:hover { transform: translate(-2px,-2px); box-shadow: 0 12px 28px rgba(0,0,0,0.22); text-decoration: none; }
+.embed { display: flex; flex-direction: column; text-decoration: none; border: 4px solid var(--ink); background: var(--bone); transition: transform 0.14s, box-shadow 0.14s; box-shadow: 5px 5px 0 var(--ink); }
+.embed:hover { transform: translate(-4px,-4px); box-shadow: 9px 9px 0 var(--ink); text-decoration: none; }
 .embed .shot { aspect-ratio: 16/10; background: var(--bone-dim); overflow: hidden; border-bottom: 4px solid var(--ink); position: relative; }
 .embed .shot img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .embed .shot .placeholder { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-family: 'Zilla Slab'; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; font-size: 11px; color: var(--ink-soft); text-align: center; padding: 12px; }
 .embed .cap { padding: 14px 16px; display: flex; flex-direction: column; gap: 6px; flex: 1; background: var(--bone); }
 .embed .outlet { font-family: 'Zilla Slab'; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; font-size: 12px; color: var(--oxide); }
 .embed .etitle { font-family: 'Zilla Slab'; font-weight: 600; font-size: 16px; line-height: 1.22; color: var(--ink); }
-.embed .go { font-family: 'Zilla Slab'; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; font-size: 12px; color: var(--teal); margin-top: auto; }
+.embed .go { font-family: 'Zilla Slab'; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; font-size: 11px; color: var(--bone); background: var(--teal); padding: 5px 10px; margin-top: auto; align-self: flex-start; }
 a.docframe { display: block; text-decoration: none; border-radius: 8px; overflow: hidden; box-shadow: 0 14px 34px rgba(0,0,0,0.25); transition: transform 0.14s, box-shadow 0.14s; max-width: 520px; }
 a.docframe:hover { transform: translate(-2px,-2px); box-shadow: 0 18px 40px rgba(15,74,74,0.35); }
 a.docframe img { display: block; width: 100%; }
@@ -167,8 +167,8 @@ a.docframe .docbar { background: var(--ink); color: var(--bone); padding: 13px 1
 a.docframe .docbar .t { font-family: 'Zilla Slab'; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; font-size: 13px; }
 a.docframe .docbar .t2 { font-family: 'Zilla Slab'; font-weight: 700; text-transform: uppercase; font-size: 12px; color: var(--ochre); }
 .social-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 18px; margin-top: 10px; }
-.scard { display: flex; flex-direction: column; text-decoration: none; border: 4px solid var(--ink); background: var(--ink); transition: transform 0.14s, box-shadow 0.14s; }
-.scard:hover { transform: translate(-2px,-2px); box-shadow: 0 12px 28px rgba(0,0,0,0.28); text-decoration: none; }
+.scard { display: flex; flex-direction: column; text-decoration: none; border: 4px solid var(--ink); background: var(--ink); transition: transform 0.14s, box-shadow 0.14s; box-shadow: 5px 5px 0 rgba(0,0,0,0.45); }
+.scard:hover { transform: translate(-4px,-4px); box-shadow: 9px 9px 0 rgba(0,0,0,0.45); text-decoration: none; }
 .scard .shot { overflow: hidden; border-bottom: 4px solid var(--ink); background: #000; }
 .scard .shot img { width: 100%; display: block; }
 .scard .cap { padding: 12px 14px; background: var(--bone); flex: 1; display: flex; flex-direction: column; gap: 6px; }
