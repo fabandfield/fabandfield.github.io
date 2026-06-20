@@ -55,7 +55,7 @@ a { color: var(--ochre); }
 .areaband.ink   .area-index { color: var(--ochre); }
 .area-title { font-size: 80px; line-height: 0.9; margin-bottom: 18px; color: var(--bone); }
 .areaband.oxide .area-title { text-shadow: 4px 4px 0 var(--ink); }
-.areaband.teal  .area-title { text-shadow: 4px 4px 0 var(--ochre); }
+.areaband.teal  .area-title { text-shadow: 3px 3px 0 var(--gold-deep); }
 .areaband.ink   .area-title { text-shadow: 4px 4px 0 var(--oxide); }
 .area-desc { font-size: 25px; line-height: 1.34; font-weight: 400; max-width: 32em; }
 .areaband.oxide .area-desc { color: #fbeede; }
@@ -93,15 +93,15 @@ footer .fname { font-family: 'Zilla Slab'; font-weight: 700; text-transform: upp
 .subhead .rays { position: absolute; top: -40%; right: -8%; width: 55%; height: 180%; opacity: 0.14; z-index: 0; }
 .subhead-inner { position: relative; z-index: 2; max-width: 1140px; margin: 0 auto; padding: 30px 40px 48px; }
 .subnav { display: flex; justify-content: space-between; align-items: center; margin-bottom: 48px; }
-.subnav .home { font-family: 'Zilla Slab'; font-weight: 700; text-transform: uppercase; color: var(--bone); font-size: 22px; letter-spacing: 0.02em; text-decoration: none; text-shadow: 2px 2px 0 var(--ochre); }
+.subnav .home { font-family: 'Zilla Slab'; font-weight: 700; text-transform: uppercase; color: var(--bone); font-size: 22px; letter-spacing: 0.02em; text-decoration: none; text-shadow: 2px 2px 0 var(--gold-deep); }
 .subhead.ochre-head .subnav .home { color: var(--ink); text-shadow: 2px 2px 0 var(--oxide); }
-.subnav .home:hover { color: var(--ochre); }
+.subnav .home:hover { color: var(--gold-soft); text-shadow: 2px 2px 0 var(--ink); }
 .subnav .links { display: flex; gap: 24px; }
 .subnav .links a { font-family: 'Zilla Slab'; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--bone); font-size: 15px; text-decoration: none; text-shadow: 0 1px 5px rgba(0,0,0,0.55); }
 .subhead.ochre-head .subnav .links a { color: var(--ink); text-shadow: 0 1px 4px rgba(255,255,255,0.85); }
 .subnav .links a:hover, .subnav .links a.active { color: var(--ochre); }
 .subhead.ochre-head .subnav .links a:hover, .subhead.ochre-head .subnav .links a.active { color: var(--oxide); }
-.subhead h1 { font-size: 76px; color: var(--bone); margin-bottom: 20px; text-shadow: 4px 4px 0 var(--ochre); }
+.subhead h1 { font-size: 76px; color: var(--bone); margin-bottom: 20px; text-shadow: 3px 3px 0 var(--gold-deep); }
 .subhead.ochre-head h1 { color: var(--ink); text-shadow: 4px 4px 0 var(--oxide); }
 .subhead .standfirst { font-size: 24px; font-weight: 400; color: #f2ece0; max-width: 38em; line-height: 1.32; }
 .subhead.ochre-head .standfirst { color: var(--ink); font-weight: 500; }
@@ -120,7 +120,7 @@ footer .fname { font-family: 'Zilla Slab'; font-weight: 700; text-transform: upp
 .s-ink h2, .s-teal h2, .s-oxide h2 { color: var(--bone); }
 .s-ochre h2 { color: var(--ink); }
 .s-ink .dept-head h2 { text-shadow: 3px 3px 0 var(--oxide); }
-.s-teal .dept-head h2 { text-shadow: 3px 3px 0 var(--ochre); }
+.s-teal .dept-head h2 { text-shadow: 3px 3px 0 var(--gold-deep); }
 .s-oxide .dept-head h2 { text-shadow: 3px 3px 0 var(--ink); }
 .s-ochre .dept-head h2 { text-shadow: 3px 3px 0 var(--oxide); }
 .section-lead { font-size: 21px; max-width: 46em; margin-bottom: 38px; line-height: 1.4; }
@@ -321,7 +321,7 @@ a.docframe .docbar .t2 { font-family: 'Zilla Slab'; font-weight: 700; text-trans
 .hero-name {
   font-family: 'Zilla Slab'; font-weight: 700; text-transform: uppercase;
   color: var(--bone); font-size: 150px; line-height: 0.86; letter-spacing: 0.01em;
-  text-shadow: 6px 6px 0 var(--gold), 8px 8px 0 rgba(0,0,0,0.18);
+  text-shadow: 5px 5px 0 var(--gold-deep), 7px 7px 0 rgba(0,0,0,0.18);
 }
 .hero-rule { height: 8px; width: 200px; background: var(--gold); margin: 32px 0 24px; }
 .hero-tag { font-family: 'Zilla Slab'; font-weight: 500; font-size: 26px; color: var(--bone); letter-spacing: 0.01em; }
@@ -425,6 +425,7 @@ a.docframe .docbar .t2 { font-family: 'Zilla Slab'; font-weight: 700; text-trans
 .subhead.ochre-head h1 { color: var(--ink) !important; text-shadow: 4px 4px 0 rgba(255,255,255,0.3) !important; }
 .subhead.ochre-head .standfirst { color: var(--ink) !important; text-shadow: none !important; }
 .subhead.ochre-head .subnav .home { color: var(--ink) !important; text-shadow: none !important; }
+.subhead.ochre-head .subnav .home:hover { color: var(--rust-deep) !important; text-shadow: none !important; }
 .subhead.ochre-head .subnav .links a { color: var(--ink) !important; }
 .subhead.ochre-head .subnav .links a:hover, .subhead.ochre-head .subnav .links a.active { color: var(--rust-deep) !important; }
 
@@ -447,5 +448,5 @@ a.docframe .docbar .t2 { font-family: 'Zilla Slab'; font-weight: 700; text-trans
 @media (max-width: 880px) {
   .popout-chip,
   .popout-poster { display: none; }
-  .areaband.teal .area-title { text-shadow: 2px 2px 0 var(--ochre); }
+  .areaband.teal .area-title { text-shadow: 2px 2px 0 var(--gold-deep); }
 }
